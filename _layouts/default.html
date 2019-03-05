@@ -17,6 +17,10 @@
 
 {% include Scroll_to_Top.html %}
 
+{% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
 </body>
 
 </html>
